@@ -1,8 +1,10 @@
+import { Briefcase } from 'lucide-react';
+
 const experiences = [
   {
-    role: 'Senior Frontend Developer',
-    company: 'Innovate Inc.',
-    duration: '2021 - Present',
+    role: 'Intern Web Developer',
+    company: 'Vault Of Codes',
+    duration: 'july 2025',
     description: 'Leading the development of a large-scale e-commerce platform using Next.js and TypeScript. Mentoring junior developers and improving code quality across the team.',
   },
   {
@@ -27,29 +29,22 @@ export default function ExperienceSection() {
           <h2 className="text-3xl sm:text-4xl font-bold font-headline text-primary">Work Experience</h2>
           <p className="mt-4 text-lg text-white/80">My professional journey and key achievements.</p>
         </div>
-        <div className="relative">
-          {/* Timeline Line */}
-          <div className="absolute left-1/2 -translate-x-1/2 top-4 bottom-4 w-1 bg-white/10 rounded-full hidden md:block"></div>
-
-          <div className="space-y-12">
-            {experiences.map((exp, index) => (
-              <div key={index} className="grid md:grid-cols-2 gap-8 items-start">
-                <div className={index % 2 === 0 ? 'md:text-right' : 'md:text-left md:col-start-2'}>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {experiences.map((exp, index) => (
+            <div key={index} className="bg-black/10 backdrop-blur-lg border border-white/10 rounded-lg p-6 flex flex-col gap-4 hover:border-primary transition-colors duration-300">
+              <div className="flex items-center gap-4">
+                <div className="bg-primary/20 p-3 rounded-full">
+                  <Briefcase className="w-6 h-6 text-primary" />
+                </div>
+                <div>
                   <h3 className="text-xl font-bold font-headline">{exp.role}</h3>
                   <p className="font-semibold text-primary">{exp.company}</p>
-                  <p className="text-sm text-white/60">{exp.duration}</p>
-                </div>
-
-                <div className={`relative ${index % 2 === 0 ? 'md:col-start-2 md:text-left' : 'md:text-left'}`}>
-                  {/* Timeline Dot */}
-                  <div className="absolute -left-4 top-2.5 -translate-x-1/2 md:left-1/2 md:-translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background/80"></div>
-                  <div className="md:hidden absolute -left-4 top-0 bottom-0 w-1 bg-white/10"></div>
-                  
-                  <p className="text-white/80 leading-relaxed pl-4 md:pl-0">{exp.description}</p>
                 </div>
               </div>
-            ))}
-          </div>
+              <p className="text-sm text-white/60">{exp.duration}</p>
+              <p className="text-white/80 leading-relaxed">{exp.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

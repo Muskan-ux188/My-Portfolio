@@ -15,7 +15,7 @@ export default function AboutSection() {
             <Card className="overflow-hidden shadow-lg bg-transparent border-white/10">
               <Image
                 src="https://placehold.co/600x800.png"
-                alt="Portrait of John Doe"
+                alt="Portrait of Muskan"
                 width={600}
                 height={800}
                 className="object-cover w-full h-full"
