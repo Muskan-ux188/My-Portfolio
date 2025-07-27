@@ -80,7 +80,7 @@ export default function ContactSection() {
               </Link>
             </div>
           </div>
-          <Card className="p-6 sm:p-8 bg-black/10 backdrop-blur-lg border-white/10">
+          <Card className="p-6 sm:p-8 bg-transparent border-white/10">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField

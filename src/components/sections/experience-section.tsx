@@ -32,7 +32,7 @@ export default function ExperienceSection() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {experiences.map((exp, index) => (
-            <div key={index} className="bg-black/10 backdrop-blur-lg border border-white/10 rounded-lg p-6 flex flex-col gap-4 hover:border-primary transition-colors duration-300">
+            <div key={index} className="bg-transparent border border-white/10 rounded-lg p-6 flex flex-col gap-4 hover:border-primary transition-colors duration-300">
               <div className="flex items-center gap-4">
                 <div className="bg-primary/20 p-3 rounded-full">
                   <Briefcase className="w-6 h-6 text-primary" />

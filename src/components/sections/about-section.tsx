@@ -13,7 +13,7 @@ export default function AboutSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-5 gap-12 items-center">
           <div className="md:col-span-2">
-            <Card className="overflow-hidden shadow-lg bg-transparent border-white/10">
+            <Card className="overflow-hidden shadow-lg bg-transparent border-white/10 aspect-square">
               <img
                 src="/mus_img.jpg"
                 alt="Portrait of Muskan"

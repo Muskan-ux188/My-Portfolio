@@ -33,7 +33,7 @@ export default function CertificatesSection() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {certificates.map((cert) => (
-            <Card key={cert.title} className="flex flex-col bg-black/10 backdrop-blur-lg border-white/10 text-white">
+            <Card key={cert.title} className="flex flex-col bg-transparent border-white/10 text-white">
               <CardHeader>
                 <CardTitle className="font-headline text-xl">{cert.title}</CardTitle>
                 <CardDescription className="text-white/70">{cert.issuer} - {cert.date}</CardDescription>

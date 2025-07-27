@@ -44,7 +44,7 @@ export default function ProjectsSection() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <Card key={project.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-black/10 backdrop-blur-lg border-white/10">
+            <Card key={project.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-transparent border-white/10">
               <CardHeader>
                 <div className="aspect-video relative">
                     <Image src={project.imageUrl} alt={project.title} fill className="object-cover rounded-t-lg" data-ai-hint={project.aiHint}/>
