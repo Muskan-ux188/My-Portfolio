@@ -36,15 +36,15 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="py-24 sm:py-32">
+    <section id="projects" className="py-24 sm:py-32 text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold font-headline text-primary">My Projects</h2>
-          <p className="mt-4 text-lg text-muted-foreground">A selection of my recent work.</p>
+          <p className="mt-4 text-lg text-white/80">A selection of my recent work.</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <Card key={project.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card/80 backdrop-blur-sm">
+            <Card key={project.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-black/10 backdrop-blur-lg border-white/10">
               <CardHeader>
                 <div className="aspect-video relative">
                     <Image src={project.imageUrl} alt={project.title} fill className="object-cover rounded-t-lg" data-ai-hint={project.aiHint}/>
@@ -53,12 +53,12 @@ export default function ProjectsSection() {
               <CardContent className="flex-grow space-y-4">
                 <CardTitle className="font-headline text-xl">{project.title}</CardTitle>
                 <div className="flex flex-wrap gap-2">
-                    {project.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
+                    {project.tags.map(tag => <Badge key={tag} variant="secondary" className="bg-white/10 text-white border-none">{tag}</Badge>)}
                 </div>
-                <CardDescription>{project.description}</CardDescription>
+                <CardDescription className="text-white/70">{project.description}</CardDescription>
               </CardContent>
               <CardFooter className="flex justify-between">
-                <Button asChild variant="outline">
+                <Button asChild variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-primary">
                     <Link href={project.codeUrl}>View Code</Link>
                 </Button>
                 <Button asChild>

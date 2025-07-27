@@ -1,3 +1,4 @@
+
 import Header from '@/components/header';
 import HomeSection from '@/components/sections/home-section';
 import AboutSection from '@/components/sections/about-section';
@@ -16,31 +17,31 @@ export default function Home() {
         <HomeSection />
         
         <ScrollAnimationWrapper>
-          <div className="bg-background/80 backdrop-blur-sm">
+          <div className="backdrop-blur-sm">
             <AboutSection />
           </div>
         </ScrollAnimationWrapper>
 
         <ScrollAnimationWrapper>
-          <div className="bg-secondary/80 backdrop-blur-sm">
+          <div className="backdrop-blur-sm">
             <ExperienceSection />
           </div>
         </ScrollAnimationWrapper>
 
         <ScrollAnimationWrapper>
-          <div className="bg-background/80 backdrop-blur-sm">
+          <div className="backdrop-blur-sm">
             <ProjectsSection />
           </div>
         </ScrollAnimationWrapper>
 
         <ScrollAnimationWrapper>
-          <div className="bg-background/80 backdrop-blur-sm">
+          <div className="backdrop-blur-sm">
             <CertificatesSection />
           </div>
         </ScrollAnimationWrapper>
 
         <ScrollAnimationWrapper>
-           <div className="bg-secondary/80 backdrop-blur-sm">
+           <div className="backdrop-blur-sm">
             <ContactSection />
           </div>
         </ScrollAnimationWrapper>
