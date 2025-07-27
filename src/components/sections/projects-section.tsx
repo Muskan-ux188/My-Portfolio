@@ -6,18 +6,18 @@ import Link from 'next/link';
 
 const projects = [
   {
-    title: 'E-commerce Platform',
-    description: 'A full-featured e-commerce site with product management, user authentication, and a Stripe-integrated checkout process.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    tags: ['Next.js', 'TypeScript', 'Stripe', 'Firebase'],
-    liveUrl: '#',
+    title: 'Spotify Clone',
+    description: 'A clone of spotify made using HTML and CSS',
+    imageUrl: '/spotify_clone.png',
+    tags: ['HTML','CSS'],
+    liveUrl: 'https://github.com/Muskan-ux188/Spotify-clone/tree/main',
     codeUrl: '#',
     aiHint: 'online store'
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates, drag-and-drop boards, and notification system.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    title: 'Giva Clone',
+    description: 'Clone of Giva accesories shopping site Made.',
+    imageUrl: '/giva.png',
     tags: ['React', 'Node.js', 'WebSocket', 'MongoDB'],
     liveUrl: '#',
     codeUrl: '#',
@@ -26,10 +26,10 @@ const projects = [
   {
     title: 'Portfolio Website',
     description: 'A personal portfolio website to showcase my skills and projects, built with a focus on performance and design.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    tags: ['Astro', 'Tailwind CSS', 'Vercel'],
+    imageUrl: '/port.png',
+    tags: ['Astro', 'Tailwind CSS', 'Vercel','react','vanta'],
     liveUrl: '#',
-    codeUrl: '#',
+    codeUrl: 'https://github.com/Muskan-ux188/My-Portfolio',
     aiHint: 'personal website'
   },
 ];

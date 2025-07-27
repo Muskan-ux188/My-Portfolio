@@ -68,15 +68,15 @@ export default function ContactSection() {
             <div className="space-y-4">
               <Link href="mailto:johndoe@example.com" className="flex items-center gap-4 group">
                 <Mail className="w-6 h-6 text-primary" />
-                <span className="text-lg group-hover:text-primary transition-colors">johndoe@example.com</span>
+                <span className="text-lg group-hover:text-primary transition-colors">mk5957968@gmail.com</span>
               </Link>
               <Link href="#" className="flex items-center gap-4 group">
                 <Linkedin className="w-6 h-6 text-primary" />
-                <span className="text-lg group-hover:text-primary transition-colors">linkedin.com/in/johndoe</span>
+                <span className="text-lg group-hover:text-primary transition-colors">https://www.linkedin.com/in/muskan-kumari-497351285/</span>
               </Link>
               <Link href="#" className="flex items-center gap-4 group">
                 <Github className="w-6 h-6 text-primary" />
-                <span className="text-lg group-hover:text-primary transition-colors">github.com/johndoe</span>
+                <span className="text-lg group-hover:text-primary transition-colors">https://github.com/Muskan-ux188</span>
               </Link>
             </div>
           </div>

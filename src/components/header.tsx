@@ -37,7 +37,7 @@ export default function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="#home" className="flex items-center gap-2 font-bold text-lg font-headline">
           <Mountain className="h-6 w-6 text-primary" />
-          <span>Vanta Portfolio</span>
+          <span>Muskan Kumari</span>
         </Link>
         <nav className="hidden md:flex gap-6 items-center">
           {navLinks.map(({ href, label }) => (
