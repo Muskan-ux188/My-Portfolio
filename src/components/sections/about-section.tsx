@@ -14,10 +14,10 @@ export default function AboutSection() {
           <div className="md:col-span-2">
             <Card className="overflow-hidden shadow-lg bg-transparent border-white/10">
               <Image
-                src="https://placehold.co/600x800.png"
+                src="https://placehold.co/600x600.png"
                 alt="Portrait of Muskan"
                 width={600}
-                height={800}
+                height={600}
                 className="object-cover w-full h-full"
                 data-ai-hint="professional portrait"
               />
