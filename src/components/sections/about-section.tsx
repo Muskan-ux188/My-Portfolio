@@ -1,10 +1,11 @@
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Download } from 'lucide-react';
 
-const skills = ['React', 'Next.js', 'TypeScript', 'Node.js', 'Tailwind CSS', 'Firebase', 'UI/UX Design', 'Agile'];
+const skills = ['HTML','CSS','JavaScript','Express','Node.js','React','MongoDB','SQL','Python','Java','C'];
 
 export default function AboutSection() {
   return (
@@ -13,8 +14,8 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-5 gap-12 items-center">
           <div className="md:col-span-2">
             <Card className="overflow-hidden shadow-lg bg-transparent border-white/10">
-              <Image
-                src="https://placehold.co/600x600.png"
+              <img
+                src="/mus_img.jpg"
                 alt="Portrait of Muskan"
                 width={600}
                 height={600}

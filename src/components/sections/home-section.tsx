@@ -6,7 +6,7 @@ export default function HomeSection() {
     <section id="home" className="relative h-screen flex items-center justify-center text-center text-white">
       <div className="relative z-10 p-4 space-y-6">
         <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tighter">
-          John Doe
+          Muskan Kumari
         </h1>
         <p className="text-lg md:text-2xl font-light max-w-2xl mx-auto">
           Creative Full Stack Developer | Building a Better Web, One Line of Code at a Time

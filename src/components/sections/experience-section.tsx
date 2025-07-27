@@ -5,20 +5,21 @@ const experiences = [
     role: 'Intern Web Developer',
     company: 'Vault Of Codes',
     duration: 'july 2025',
-    description: 'Leading the development of a large-scale e-commerce platform using Next.js and TypeScript. Mentoring junior developers and improving code quality across the team.',
+    description: 'Worked on improving in website components.',
   },
   {
-    role: 'Full Stack Developer',
-    company: 'Tech Solutions LLC',
-    duration: '2019 - 2021',
-    description: 'Developed and maintained client websites and internal tools using React, Node.js, and GraphQL. Collaborated with designers and product managers to deliver high-quality features.',
+    role: 'IOT Developer',
+    company: 'Arduino Project',
+    duration: 'April 2024',
+    description: 'Worked on bluetooth connectivity Phone and smart locker',
   },
   {
-    role: 'Web Developer Intern',
-    company: 'CodeStarters',
-    duration: '2018 - 2019',
-    description: 'Assisted in building responsive user interfaces with HTML, CSS, and JavaScript. Gained hands-on experience with version control and agile development methodologies.',
-  },
+    role: 'Database Engineer',
+    company: 'Raspberr pi Project',
+    duration: 'December 2024',
+    description: 'Worked on creating, Managing, and maintaining product databases for an automated checkout system.',
+  }
+
 ];
 
 export default function ExperienceSection() {
