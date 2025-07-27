@@ -1,12 +1,10 @@
-import VantaBackground from '@/components/vanta-background';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 export default function HomeSection() {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center text-center text-white">
-      <VantaBackground />
-      <div className="relative z-10 p-4 space-y-6 bg-black/30 backdrop-blur-sm rounded-xl">
+      <div className="relative z-10 p-4 space-y-6">
         <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tighter">
           John Doe
         </h1>

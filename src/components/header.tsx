@@ -30,8 +30,8 @@ export default function Header() {
   return (
     <header
       className={cn(
-        'sticky top-0 z-50 w-full transition-all duration-300',
-        scrolled ? 'bg-background/10 backdrop-blur-lg shadow-lg border-b border-white/10' : 'bg-transparent'
+        'sticky top-0 z-50 w-full transition-all duration-300 text-white',
+        scrolled ? 'bg-black/10 backdrop-blur-lg shadow-lg border-b border-white/10' : 'bg-transparent'
       )}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
@@ -49,12 +49,12 @@ export default function Header() {
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
+              <Button variant="ghost" size="icon" className="hover:bg-white/10">
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right">
+            <SheetContent side="right" className="bg-background/80 backdrop-blur-lg">
               <div className="grid gap-4 py-6">
                 {navLinks.map(({ href, label }) => (
                   <SheetClose asChild key={href}>

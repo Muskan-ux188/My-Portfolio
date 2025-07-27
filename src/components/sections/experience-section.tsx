@@ -21,7 +21,7 @@ const experiences = [
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-24 sm:py-32 bg-secondary/50">
+    <section id="experience" className="py-24 sm:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold font-headline text-primary">Work Experience</h2>
@@ -42,7 +42,7 @@ export default function ExperienceSection() {
 
                 <div className={`relative ${index % 2 === 0 ? 'md:col-start-2 md:text-left' : 'md:text-left'}`}>
                   {/* Timeline Dot */}
-                  <div className="absolute -left-4 top-2.5 -translate-x-1/2 md:left-1/2 md:-translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background"></div>
+                  <div className="absolute -left-4 top-2.5 -translate-x-1/2 md:left-1/2 md:-translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background/80"></div>
                   <div className="md:hidden absolute -left-4 top-0 bottom-0 w-1 bg-border"></div>
                   
                   <p className="text-muted-foreground leading-relaxed pl-4 md:pl-0">{exp.description}</p>

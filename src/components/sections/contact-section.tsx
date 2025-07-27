@@ -18,6 +18,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import Link from "next/link";
+import { Card } from "../ui/card";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -53,7 +54,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-24 sm:py-32 bg-secondary/50">
+    <section id="contact" className="py-24 sm:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold font-headline text-primary">Get in Touch</h2>
@@ -79,7 +80,7 @@ export default function ContactSection() {
               </Link>
             </div>
           </div>
-          <div>
+          <Card className="p-6 sm:p-8 bg-card/80 backdrop-blur-sm">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField
@@ -124,7 +125,7 @@ export default function ContactSection() {
                 <Button type="submit" size="lg" className="w-full">Send Message</Button>
               </form>
             </Form>
-          </div>
+          </Card>
         </div>
       </div>
     </section>

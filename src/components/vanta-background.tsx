@@ -25,7 +25,7 @@ export default function VantaBackground() {
         scale: 1.00,
         scaleMobile: 1.00,
         color: 0xbf00ff, // Accent: Electric Purple
-        backgroundColor: 0x4b0082, // Primary: Deep Indigo
+        backgroundColor: 0x1a0b2e, 
         points: 12.00,
         maxDistance: 25.00,
         spacing: 18.00
@@ -36,5 +36,5 @@ export default function VantaBackground() {
     };
   }, [vantaEffect]);
 
-  return <div ref={vantaRef} className="absolute inset-0 w-full h-full -z-10" />;
+  return <div ref={vantaRef} className="fixed inset-0 w-full h-full -z-10" />;
 }

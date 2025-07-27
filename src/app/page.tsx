@@ -16,23 +16,33 @@ export default function Home() {
         <HomeSection />
         
         <ScrollAnimationWrapper>
-          <AboutSection />
+          <div className="bg-background/80 backdrop-blur-sm">
+            <AboutSection />
+          </div>
         </ScrollAnimationWrapper>
 
         <ScrollAnimationWrapper>
-          <ExperienceSection />
+          <div className="bg-secondary/80 backdrop-blur-sm">
+            <ExperienceSection />
+          </div>
         </ScrollAnimationWrapper>
 
         <ScrollAnimationWrapper>
-          <ProjectsSection />
+          <div className="bg-background/80 backdrop-blur-sm">
+            <ProjectsSection />
+          </div>
         </ScrollAnimationWrapper>
 
         <ScrollAnimationWrapper>
-          <CertificatesSection />
+          <div className="bg-background/80 backdrop-blur-sm">
+            <CertificatesSection />
+          </div>
         </ScrollAnimationWrapper>
 
         <ScrollAnimationWrapper>
-          <ContactSection />
+           <div className="bg-secondary/80 backdrop-blur-sm">
+            <ContactSection />
+          </div>
         </ScrollAnimationWrapper>
       </main>
       <Footer />

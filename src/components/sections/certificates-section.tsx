@@ -25,7 +25,7 @@ const certificates = [
 
 export default function CertificatesSection() {
   return (
-    <section id="certificates" className="py-24 sm:py-32 bg-background">
+    <section id="certificates" className="py-24 sm:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold font-headline text-primary">Certificates & Awards</h2>
@@ -33,7 +33,7 @@ export default function CertificatesSection() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {certificates.map((cert) => (
-            <Card key={cert.title} className="flex flex-col">
+            <Card key={cert.title} className="flex flex-col bg-card/80 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="font-headline text-xl">{cert.title}</CardTitle>
                 <CardDescription>{cert.issuer} - {cert.date}</CardDescription>

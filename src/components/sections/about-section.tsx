@@ -8,11 +8,11 @@ const skills = ['React', 'Next.js', 'TypeScript', 'Node.js', 'Tailwind CSS', 'Fi
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-24 sm:py-32 bg-background">
+    <section id="about" className="py-24 sm:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-5 gap-12 items-center">
           <div className="md:col-span-2">
-            <Card className="overflow-hidden shadow-lg">
+            <Card className="overflow-hidden shadow-lg bg-card/80 backdrop-blur-sm">
               <Image
                 src="https://placehold.co/600x800.png"
                 alt="Portrait of John Doe"

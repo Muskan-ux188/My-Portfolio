@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Toaster } from "@/components/ui/toaster"
+import VantaBackground from '@/components/vanta-background';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -23,7 +24,10 @@ export default function RootLayout({
         <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
       </head>
       <body className="font-body antialiased">
-        {children}
+        <VantaBackground />
+        <div className="relative z-10">
+          {children}
+        </div>
         <Toaster />
       </body>
     </html>
