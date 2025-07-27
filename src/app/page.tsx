@@ -1,3 +1,41 @@
+import Header from '@/components/header';
+import HomeSection from '@/components/sections/home-section';
+import AboutSection from '@/components/sections/about-section';
+import ExperienceSection from '@/components/sections/experience-section';
+import ProjectsSection from '@/components/sections/projects-section';
+import CertificatesSection from '@/components/sections/certificates-section';
+import ContactSection from '@/components/sections/contact-section';
+import Footer from '@/components/footer';
+import { ScrollAnimationWrapper } from '@/components/scroll-animation-wrapper';
+
 export default function Home() {
-  return <></>;
+  return (
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-grow">
+        <HomeSection />
+        
+        <ScrollAnimationWrapper>
+          <AboutSection />
+        </ScrollAnimationWrapper>
+
+        <ScrollAnimationWrapper>
+          <ExperienceSection />
+        </ScrollAnimationWrapper>
+
+        <ScrollAnimationWrapper>
+          <ProjectsSection />
+        </ScrollAnimationWrapper>
+
+        <ScrollAnimationWrapper>
+          <CertificatesSection />
+        </ScrollAnimationWrapper>
+
+        <ScrollAnimationWrapper>
+          <ContactSection />
+        </ScrollAnimationWrapper>
+      </main>
+      <Footer />
+    </div>
+  );
 }

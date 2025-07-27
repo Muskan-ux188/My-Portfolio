@@ -1,0 +1,10 @@
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+  return (
+    <footer className="bg-background border-t">
+      <div className="container mx-auto py-6 text-center text-muted-foreground">
+        <p>&copy; {currentYear} John Doe. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+}
