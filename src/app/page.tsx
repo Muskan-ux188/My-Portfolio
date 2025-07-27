@@ -7,7 +7,6 @@ import ProjectsSection from '@/components/sections/projects-section';
 import CertificatesSection from '@/components/sections/certificates-section';
 import ContactSection from '@/components/sections/contact-section';
 import Footer from '@/components/footer';
-import { ScrollAnimationWrapper } from '@/components/scroll-animation-wrapper';
 
 export default function Home() {
   return (
@@ -16,35 +15,25 @@ export default function Home() {
       <main className="flex-grow">
         <HomeSection />
         
-        <ScrollAnimationWrapper>
-          <div className="backdrop-blur-sm">
-            <AboutSection />
-          </div>
-        </ScrollAnimationWrapper>
+        <div className="backdrop-blur-sm">
+          <AboutSection />
+        </div>
 
-        <ScrollAnimationWrapper>
-          <div className="backdrop-blur-sm">
-            <ExperienceSection />
-          </div>
-        </ScrollAnimationWrapper>
+        <div className="backdrop-blur-sm">
+          <ExperienceSection />
+        </div>
 
-        <ScrollAnimationWrapper>
-          <div className="backdrop-blur-sm">
-            <ProjectsSection />
-          </div>
-        </ScrollAnimationWrapper>
+        <div className="backdrop-blur-sm">
+          <ProjectsSection />
+        </div>
 
-        <ScrollAnimationWrapper>
-          <div className="backdrop-blur-sm">
-            <CertificatesSection />
-          </div>
-        </ScrollAnimationWrapper>
+        <div className="backdrop-blur-sm">
+          <CertificatesSection />
+        </div>
 
-        <ScrollAnimationWrapper>
-           <div className="backdrop-blur-sm">
-            <ContactSection />
-          </div>
-        </ScrollAnimationWrapper>
+        <div className="backdrop-blur-sm">
+          <ContactSection />
+        </div>
       </main>
       <Footer />
     </div>
